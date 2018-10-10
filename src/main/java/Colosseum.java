@@ -96,9 +96,9 @@ public class Colosseum {
         int defenseMax = MAX_HIT_POINTS - tempPokemon.attackLevel;
         System.out.println("Enter your defense level (1-" + defenseMax + "):");
         tempPokemon.attackLevel = sc.nextInt();
-        while (tempPokemon.attackLevel < 0 || tempPokemon.attackLevel > defenseMax) {
-            System.out.println("Sorry. The attack level must be between 1 and " + defenseMax + ": " + tempPokemon.attackLevel);
-            tempPokemon.attackLevel = sc.nextInt();
+        while (tempPokemon.defenseLevel < 0 || tempPokemon.defenseLevel > defenseMax) {
+            System.out.println("Sorry. The defense level must be between 1 and " + defenseMax + ": " + tempPokemon.defenseLevel);
+            tempPokemon.defenseLevel = sc.nextInt();
         }
 
         return tempPokemon;
